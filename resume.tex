@@ -1,0 +1,173 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.450in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+   \textbf{\huge Riley Hanzhang Niu}\\
+
+    \vspace{5pt}
+   \href{https://github.com/rileyniu}{https://github.com/rileyniu} \\\href{mailto:hn263@cornell.edu}{hn263@cornell.edu} $\vert$
+  602-262-6927\\ 
+ 911 E. State St \#734, Ithaca, NY 
+\end{center}
+
+\shorterSection{Objective}
+\resumeSubHeadingListStart
+    \item{An internship or research opportunity in software engineering  , computer graphics, or game design fields}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University, College of Engineering}{Ithaca, NY}
+      {Bachelor of Science in Computer Science, Minor in Math;  GPA: 3.65/4.0}{Expected May 2020}{
+      \resumeItemNoBullet{Relevant Coursework}{Algorithm Design, Discrete Structures, Linear Algebra, Statistics, Functional Programming, OO Programming \& Data Structures,  Computer System Organization, Introduction to Computer Vision, Computer Game Architecture, Web Programming \& Data Visualization, Intoduction to C++}
+    }
+    \vspace{5pt}
+    \resumeSubheading
+    {North High School}{Phoenix, AZ}
+    {Top 5\% of Graduating Class}{May, 2016}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{:  Java, C/C++, C\#, Python, HLSL, OCaml, Haskell, JavaScript, PHP, HTML, CSS, Swift 3}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Tool \& Libraries}{: \ Unity, OpenGL, MySQL, Linux, Git, SVN}
+    }
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NetEase Games}{Hangzhou, China}
+      {Game Engine Intern (Engineering Co-op Program)}{June 2018 - December 2018}
+      \resumeItemListStart
+          \resumeItem {Revelation}{an upcoming MMORPG mobile game powered by Unity3D}
+          \begin{itemize}
+              \item Worked on data pipeline, scene management, and custom tool development to optimize game quality using C\# scripting in Unity
+              \item Collaborated with artists to research, create and optimize graphics shaders and relevant rendering techniques for stylistic and photorealistic asset production, including character, environment, lighting, and PBR material creation
+              \item  Researched and implemented a non-photorealistic image filtering functionality for the camera feature in the game
+              \item Created a Hausdorff-based  mesh-reduction tool for asset LOD optimization
+          \end{itemize}
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Volumetric Cloud Simulation}{A real-time volumetric cloud rendering solution for Unity mobile projects, using auto-generated meshes, perlin noise textures and custom lighting calculations}
+    \resumeSubItem{Embarkment}
+     {A 2D desktop game project combining two-stick shooter and tower defense gameplay based on LibGDX and Java
+     }
+    \vspace{-10pt}
+     \begin{itemize}
+         \item Worked as the lead programmer for game physics, AI implementation and asset integration
+     \end{itemize}
+    \resumeSubItem{Big Red Mecha}{A Unity virtual reality tower defense game project based on real-time views in Cornell campus}
+    \resumeSubItem{Man in the Shadow}{A 2D desktop puzzle game as a Hackthon project developed using Unity and C\#}
+    \resumeSubItem{Website for Local Business}{A commercial website for local business with admin system, developed with MySQL database, interactive PHP and JavaScript functionalities as a group project}
+    \resumeSubItem{E-Pin}
+      {An electronic prototype developed in Cornell Make-a-thon to solve child lost
+problem; the prototype uses Arduino board with Infrared Receiver Sensor to keep track of distance,
+which is synced with a mobile app for control}
+  \resumeSubHeadingListEnd
+
+%-----------Addtional Experience & Achievements-----------------
+\shorterSection{Activities}
+  \resumeSubHeadingListStart
+  \item{Cornell Creative Computing Club}
+  \vspace{-5pt}
+    \item{Placed 5/20 in Cornell Hackathon with rapid prototyping}
+    \vspace{-5pt}
+    \item{The Scientista Foundation for Women in STEM}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
